@@ -1,0 +1,248 @@
+2026-07-27 12:13:18,229 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:13:18,229 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:13:18,230 INFO sqlalchemy.engine.Engine [cached since 0.2181s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:13:18,239 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:13:35,243 INFO ABLE ABLE Platform Started
+2026-07-27 12:13:35,245 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:13:35,246 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:13:35,247 INFO sqlalchemy.engine.Engine [cached since 0.2329s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:13:35,248 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:13:57,876 INFO ABLE ABLE Platform Started
+2026-07-27 12:13:57,878 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:13:57,879 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:13:57,879 INFO sqlalchemy.engine.Engine [cached since 0.2696s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:13:57,880 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:14:40,376 INFO ABLE ABLE Platform Started
+2026-07-27 12:14:40,378 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:14:40,379 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:14:40,379 INFO sqlalchemy.engine.Engine [cached since 0.2413s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:14:40,380 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:15:29,596 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:15:29,598 INFO sqlalchemy.engine.Engine SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2026-07-27 12:15:29,599 INFO sqlalchemy.engine.Engine [generated in 0.00053s] {'username_1': 'test', 'param_1': 1}
+2026-07-27 12:15:29,928 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-07-27 12:16:03,954 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:16:03,955 INFO sqlalchemy.engine.Engine SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2026-07-27 12:16:03,956 INFO sqlalchemy.engine.Engine [cached since 34.36s ago] {'username_1': 'test', 'param_1': 1}
+2026-07-27 12:16:04,247 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-07-27 12:16:11,380 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:16:11,381 INFO sqlalchemy.engine.Engine SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2026-07-27 12:16:11,381 INFO sqlalchemy.engine.Engine [cached since 41.78s ago] {'username_1': 'test', 'param_1': 1}
+2026-07-27 12:16:11,385 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-07-27 12:17:51,838 INFO ABLE ABLE Platform Started
+2026-07-27 12:17:51,841 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:17:51,843 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:17:51,844 INFO sqlalchemy.engine.Engine [cached since 0.2198s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:17:51,846 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:18:08,831 INFO ABLE ABLE Platform Started
+2026-07-27 12:18:08,834 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:18:08,835 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:18:08,836 INFO sqlalchemy.engine.Engine [cached since 0.419s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:18:08,838 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:18:16,114 INFO ABLE ABLE Platform Started
+2026-07-27 12:18:16,116 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:18:16,116 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:18:16,117 INFO sqlalchemy.engine.Engine [cached since 0.2084s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:18:16,118 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:18:42,681 INFO ABLE ABLE Platform Started
+2026-07-27 12:18:42,682 INFO ABLE ABLE Platform Started
+2026-07-27 12:18:42,684 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:18:42,685 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:18:42,686 INFO sqlalchemy.engine.Engine [cached since 0.312s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:18:42,688 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:18:57,536 INFO ABLE ABLE Platform Started
+2026-07-27 12:18:57,537 INFO ABLE ABLE Platform Started
+2026-07-27 12:18:57,538 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:18:57,539 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:18:57,539 INFO sqlalchemy.engine.Engine [cached since 0.2089s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:18:57,541 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:19:33,995 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:19:33,997 INFO sqlalchemy.engine.Engine SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2026-07-27 12:19:33,998 INFO sqlalchemy.engine.Engine [generated in 0.00050s] {'username_1': 'test', 'param_1': 1}
+2026-07-27 12:19:34,003 INFO ABLE GET /me/ 200 33.51 ms
+2026-07-27 12:19:34,004 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-07-27 12:20:41,223 INFO ABLE ABLE Platform Started
+2026-07-27 12:20:41,226 INFO ABLE ABLE Platform Started
+2026-07-27 12:20:41,233 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:20:41,235 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:20:41,236 INFO sqlalchemy.engine.Engine [cached since 0.2272s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:20:41,241 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:26:41,070 INFO ABLE ABLE Platform Started
+2026-07-27 12:26:41,072 INFO ABLE ABLE Platform Started
+2026-07-27 12:26:41,073 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:26:41,074 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:26:41,075 INFO sqlalchemy.engine.Engine [cached since 0.3791s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:26:41,077 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:27:24,811 INFO ABLE ABLE Platform Started
+2026-07-27 12:27:24,812 INFO ABLE ABLE Platform Started
+2026-07-27 12:27:24,814 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:27:24,815 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:27:24,815 INFO sqlalchemy.engine.Engine [cached since 0.2767s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:27:24,816 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:29:32,150 INFO ABLE ABLE Platform Started
+2026-07-27 12:29:32,151 INFO ABLE ABLE Platform Started
+2026-07-27 12:29:32,153 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:29:32,154 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:29:32,155 INFO sqlalchemy.engine.Engine [cached since 0.3014s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:29:32,157 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:29:35,827 INFO ABLE ABLE Platform Started
+2026-07-27 12:29:35,828 INFO ABLE ABLE Platform Started
+2026-07-27 12:29:35,831 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:29:35,831 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:29:35,832 INFO sqlalchemy.engine.Engine [cached since 0.3171s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:29:35,834 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:29:35,835 INFO sqlalchemy.engine.Engine [cached since 0.3197s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:29:35,836 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:30:39,099 INFO ABLE ABLE Platform Started
+2026-07-27 12:30:39,101 INFO ABLE ABLE Platform Started
+2026-07-27 12:30:39,102 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:30:39,103 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:30:39,103 INFO sqlalchemy.engine.Engine [cached since 0.2424s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:30:39,105 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:30:39,105 INFO sqlalchemy.engine.Engine [cached since 0.2441s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:30:39,106 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:31:46,464 INFO ABLE ABLE Platform Started
+2026-07-27 12:31:46,465 INFO ABLE ABLE Platform Started
+2026-07-27 12:31:46,467 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:31:46,467 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:31:46,468 INFO sqlalchemy.engine.Engine [cached since 0.2777s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:31:46,469 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:31:46,470 INFO sqlalchemy.engine.Engine [cached since 0.2797s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:31:46,471 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:33:35,085 INFO ABLE ABLE Platform Started
+2026-07-27 12:33:35,086 INFO ABLE ABLE Platform Started
+2026-07-27 12:33:35,088 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:33:35,089 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:33:35,089 INFO sqlalchemy.engine.Engine [cached since 0.5447s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:33:35,091 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:33:35,091 INFO sqlalchemy.engine.Engine [cached since 0.5467s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:33:35,093 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:33:37,999 INFO ABLE ABLE Platform Started
+2026-07-27 12:33:38,000 INFO ABLE ABLE Platform Started
+2026-07-27 12:33:38,002 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:33:38,003 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:33:38,003 INFO sqlalchemy.engine.Engine [cached since 0.218s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:33:38,005 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:33:38,006 INFO sqlalchemy.engine.Engine [cached since 0.2205s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:33:38,007 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:33:41,084 INFO ABLE ABLE Platform Started
+2026-07-27 12:33:41,085 INFO ABLE ABLE Platform Started
+2026-07-27 12:33:41,089 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:33:41,090 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:33:41,091 INFO sqlalchemy.engine.Engine [cached since 0.2739s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:33:41,094 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:33:41,094 INFO sqlalchemy.engine.Engine [cached since 0.2771s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:33:41,096 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:44:48,462 INFO ABLE ABLE Platform Started
+2026-07-27 12:44:48,463 INFO ABLE ABLE Platform Started
+2026-07-27 12:44:48,465 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:44:48,466 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:44:48,467 INFO sqlalchemy.engine.Engine [cached since 4.56s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:44:48,468 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:44:48,469 INFO sqlalchemy.engine.Engine [cached since 4.562s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:44:48,470 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:45:10,306 INFO ABLE GET /docs 200 1.19 ms
+2026-07-27 12:45:10,546 INFO ABLE GET /openapi.json 200 56.59 ms
+2026-07-27 12:46:19,319 INFO ABLE POST /documents/upload 401 14.20 ms
+2026-07-27 12:46:33,488 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:46:33,491 INFO sqlalchemy.engine.Engine SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2026-07-27 12:46:33,492 INFO sqlalchemy.engine.Engine [generated in 0.00117s] {'username_1': 'test', 'param_1': 1}
+2026-07-27 12:46:33,827 INFO ABLE POST /auth/login 200 346.78 ms
+2026-07-27 12:46:33,829 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-07-27 12:46:37,622 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:46:37,624 INFO sqlalchemy.engine.Engine SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2026-07-27 12:46:37,625 INFO sqlalchemy.engine.Engine [cached since 4.133s ago] {'username_1': 'test', 'param_1': 1}
+2026-07-27 12:46:37,632 INFO sqlalchemy.engine.Engine INSERT INTO documents (filename, stored_filename, content_type, uploaded_by, uploaded_at) VALUES (%(filename)s, %(stored_filename)s, %(content_type)s, %(uploaded_by)s, %(uploaded_at)s) RETURNING documents.id
+2026-07-27 12:46:37,633 INFO sqlalchemy.engine.Engine [generated in 0.00121s] {'filename': 'Statement_2026MTH06_160580489.pdf', 'stored_filename': '5d187d8f-d550-4c16-b265-e1086d700068.pdf', 'content_type': 'application/pdf', 'uploaded_by': 'test', 'uploaded_at': datetime.datetime(2026, 7, 27, 7, 16, 37, 632701)}
+2026-07-27 12:46:37,638 INFO sqlalchemy.engine.Engine COMMIT
+2026-07-27 12:46:37,642 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:46:37,644 INFO sqlalchemy.engine.Engine SELECT documents.id, documents.filename, documents.stored_filename, documents.content_type, documents.uploaded_by, documents.uploaded_at 
+FROM documents 
+WHERE documents.id = %(pk_1)s
+2026-07-27 12:46:37,645 INFO sqlalchemy.engine.Engine [generated in 0.00091s] {'pk_1': 1}
+2026-07-27 12:46:37,648 INFO ABLE POST /documents/upload 200 29.59 ms
+2026-07-27 12:46:37,649 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-07-27 12:49:02,879 INFO ABLE ABLE Platform Started
+2026-07-27 12:49:02,880 INFO ABLE ABLE Platform Started
+2026-07-27 12:49:02,881 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-07-27 12:49:02,883 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:49:02,883 INFO sqlalchemy.engine.Engine [cached since 0.2246s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:49:02,885 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-07-27 12:49:02,885 INFO sqlalchemy.engine.Engine [cached since 0.2266s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-07-27 12:49:02,886 INFO sqlalchemy.engine.Engine COMMIT

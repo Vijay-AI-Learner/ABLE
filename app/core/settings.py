@@ -5,7 +5,9 @@ class Settings(BaseSettings):
     app_name: str
     app_version: str
     database_url: str
-
+    secret_key: str
+    algorithm: str
+    access_token_expire_minutes: int
 
     model_config = SettingsConfigDict(
         env_file=".env",
